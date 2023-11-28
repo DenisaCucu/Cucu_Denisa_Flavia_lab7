@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cucu_Denisa_Flavia_lab7.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="cute_dog.jpg"
+                SemanticProperties.Description="Cute dog waving"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Hello, Denisa Flavia!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+            
+            <Label
+                Text="Welcome to my custom .NET MAUI App."
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="This is a customized welcome message"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+           
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me and explore!"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
